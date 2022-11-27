@@ -1,0 +1,128 @@
+nav {
+  background: #28293E;
+  position: absolute;
+  height: 300px;
+  width: 1233px;
+  left: 0px;
+  top: 0px;
+  border-radius: 0px;
+
+  .nav_container {
+    max-width: 1040px;
+    height: 67px;
+    margin: 0 auto;
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .agency {
+      font-family: Epilogue;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 32px;
+      letter-spacing: 0px;
+      text-align: left;
+      margin-top: 10px;
+      color: white;
+    }
+
+    .nav_logo {
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .nav_logo {
+      .biglog {
+        position: relative;
+
+        .smalllog {
+          position: absolute;
+          left: 10.5px;
+          top: 11px;
+
+          img {
+            width: 25px;
+            height: 25px;
+          }
+        }
+      }
+    }
+
+    .nav_menu {
+      display: flex;
+      height: 100%;
+
+      ul {
+        display: flex;
+        align-items: center;
+        gap: 41px;
+        margin-right: 45px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 28px;
+        list-style: none;
+
+        li {
+          a {
+            color: white;
+            text-decoration: none;
+            //styleName: Text;
+            font-family: Epilogue;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 32px;
+            letter-spacing: 0px;
+            text-align: center;
+
+          }
+        }
+
+      }
+    }
+
+    .nav_button {
+      border: 1px solid rgba(255, 255, 255, 0.295743);
+      border-radius: 6px;
+      background: #28293E;
+
+      a {
+        font-size: 14px;
+        text-decoration: none;
+        color: #28293E;
+        font-family: Epilogue;
+        font-size: 14px;
+        font-weight: 900;
+        line-height: 14px;
+        letter-spacing: 0px;
+        text-align: center;
+
+      }
+    }
+
+    .nav_bar {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 996px) {
+  nav {
+    .nav_container {
+      .nav_menu {
+        ul {
+          display: none;
+        }
+      }
+
+      .nav_button {
+        display: none;
+      }
+
+      .nav_bar {
+        display: block;
+        color: white;
+      }
+    }
+  }
+}
